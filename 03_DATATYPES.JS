@@ -2,6 +2,8 @@
 
 // ****[PRIMITIVE DATATYPE]****
 
+// 7 TYPES: STRING ,NUMBER , BOOLEARN ,NULL, UNDEFINED , SYMBOL , BigInt
+
 // Numbers:
 let length = 16;
 let weight = 7.5;
@@ -24,6 +26,8 @@ console.log(newVar);
 
 
 // ****[NON-PRIMITIVE DATATYPE]****
+
+// Arrays , Objects , Function
 
 //OBJECT
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: blue;
+    background-color: darkgrey;
+    border: 2px solid black;
+}
+
+</style>
+</head>
+<body>
+    <button id="btn1">click me</button>
+
+    <button ondblclick="console.log(`double click `);">click me 2 times</button>
+
+    <div >this is the box</div>
+
+<script >
+       
+let btn1= document.querySelector("#btn1");
+
+btn1.onclick= ()=>{
+    console.log("hello world");
+};
+
+
+let div=document.querySelector("div");
+
+div.onmouseover=()=>{
+    console.log("pichiiii hookiiiii");
+    
+}
+ 
+// EVENT OBJECT --->
+
+btn1.onclick= (e)=>{
+    console.log(e);
+    console.log(e.target);
+    console.log(e.clientX,e.clientY);
+};
+
+// EVENT LISTENER ---->  method attaches an event handler to the specified element
+
+
+btn1.addEventListener('click',()=>{
+    console.log("btn1 was click-handler 1");
+});
+
+btn1.addEventListener('click',()=>{
+    console.log("btn1 was click -handler 2");
+});
+
+const handler3 =()=>{
+    console.log("btn1 was click -handler 3");
+}
+btn1.addEventListener('click',handler3);
+
+btn1.addEventListener('click',()=>{
+    console.log("btn1 was click -handler 4");
+})
+
+btn1.removeEventListener('click',handler3);
+
+    </script>
+</body>
+</html>

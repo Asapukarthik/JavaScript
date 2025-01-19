@@ -15,5 +15,5 @@ let std={
     cgpa:7.2
 }
 for(let key in std){
-    console.log(key,std[key]);
+    console.log(std[key]);
 }

@@ -1,0 +1,42 @@
+<!-- //JSON = (javascript object notation ) data -interchange format 
+//          used for exchanging data between a server and a web application
+//          json files {key:value} or[value1,valeu2,value3]
+
+//          JSON.stringify() = convert a js object to a json string
+//          JSON.parse() = converts a json string to a js object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names=["BOB","alluarjun","Balayya","NTR"];
+        const jsonString=JSON.stringify(names);
+        console.log(jsonString);
+
+        const person={
+            name: "karthik",
+            age: 20,
+            isEmployed:true,
+            hobbies:["movies","books","playing"]
+        }
+        const jsonString1=JSON.stringify(person);
+        console.log(jsonString1);
+        
+        // original form
+
+        const parsedData=JSON.parse(jsonString);
+        console.log(parsedData);
+
+        const parsedData1=JSON.parse(jsonString1);
+        console.log(parsedData1);
+        
+
+    </script>
+</body>
+</html>
+
